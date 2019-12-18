@@ -7,4 +7,6 @@
     <include file="$(find zeabus_elec_ros)/launch/elec_launch.launch"
             pass_all_args="true"/>
 
+    <include file="$(find zeabus_model)/launch/zeabus_model.launch"/>
+
 </launch>
