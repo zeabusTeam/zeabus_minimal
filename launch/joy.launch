@@ -1,0 +1,12 @@
+<?xml version='1.0'?>
+
+<launch>
+
+    <include file="$(find zeabus_ui)/launch/joy.launch">
+       <arg name="topic_output" value="/sensor/joy"/> 
+    </include>
+
+
+    <node pkg="zeabus_ui" type="joy_control.py" name="control_joy" output="screen"/>
+
+</launch>
